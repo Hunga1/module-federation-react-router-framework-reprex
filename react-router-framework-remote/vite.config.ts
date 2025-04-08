@@ -17,9 +17,9 @@ export default defineConfig({
       name: "remote",
       filename: "remoteEntry.js",
       exposes: {
-        "./remote-app": "./app/root.tsx"
+        "./remote-app": "./app/routes/home.tsx"
       },
-      shared: ["react", "react-dom"]
+      shared: ["react", "react-dom", "react-router"]
     }),
     ],
 });

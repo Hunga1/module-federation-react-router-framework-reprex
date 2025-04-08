@@ -25,6 +25,6 @@ export default defineConfig({
         },
       },
       filename: "remoteEntry.js",
-      shared: ["react", "react-dom"]
+      shared: ["react", "react-dom", "react-router"]
     })],
 });
