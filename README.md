@@ -29,16 +29,18 @@ After starting the applications and navigating to each in the browser, we encoun
 
 Error on remote app:
 ```
-[vite] Error when evaluating SSR module /node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:
-|- ReferenceError: require is not defined
-    at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-remote/node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:8:25)
+[vite] (ssr) Error when evaluating SSR module virtual:react-router/server-build: require is not defined
+      at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-remote/node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:8:25)
+[vite] Internal server error: require is not defined
+      at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-remote/node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:8:25)
 ```
 
 Error on host app:
 ```
-[vite] Error when evaluating SSR module /node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:
-|- ReferenceError: require is not defined
-    at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-host/node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:8:25)
+[vite] (ssr) Error when evaluating SSR module virtual:react-router/server-build: require is not defined
+      at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-host/node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:8:25)
+[vite] Internal server error: require is not defined
+      at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-host/node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:8:25)
 ```
 
 The expected behavior is the remote application [Home](react-router-framework-remote/app/routes/home.tsx) component is rendered in the host application home index page.
