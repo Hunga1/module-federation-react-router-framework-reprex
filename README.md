@@ -29,16 +29,16 @@ After starting the applications and navigating to each in the browser, we encoun
 
 Error on remote app:
 ```
-require is not defined
-  at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-remote/node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:8:25)
-  at instantiateModule (file:///Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-remote/node_modules/.pnpm/vite@5.4.17_@types+node@20.17.30_lightningcss@1.29.2/node_modules/vite/dist/node/chunks/dep-Dyl6b77n.js:52981:11)
+[vite] Error when evaluating SSR module /node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:
+|- ReferenceError: require is not defined
+    at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-remote/node_modules/__mf__virtual/remote__loadShare__react_mf_2_router__loadShare__.js:8:25)
 ```
 
 Error on host app:
 ```
-require is not defined
-  at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-host/node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:8:25)
-  at instantiateModule (file:///Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-host/node_modules/.pnpm/vite@5.4.17_@types+node@20.17.30_lightningcss@1.29.2/node_modules/vite/dist/node/chunks/dep-Dyl6b77n.js:52981:11)
+[vite] Error when evaluating SSR module /node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:
+|- ReferenceError: require is not defined
+    at eval (/Users/myuser/module-federation-react-router-framework-reprex/react-router-framework-host/node_modules/__mf__virtual/host__loadShare__react_mf_2_router__loadShare__.js:8:25)
 ```
 
 The expected behavior is the remote application [Home](react-router-framework-remote/app/routes/home.tsx) component is rendered in the host application home index page.
